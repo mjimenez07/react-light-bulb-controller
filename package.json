@@ -20,6 +20,12 @@
     "not ie <= 11",
     "not op_mini all"
   ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm lint",
+      "pre-push": "npm test"
+    }
+  },
   "devDependencies": {
     "eslint": "^5.8.0",
     "eslint-config-airbnb": "^17.1.0",

@@ -22,8 +22,7 @@
   ],
   "husky": {
     "hooks": {
-      "pre-commit": "npm lint",
-      "pre-push": "npm test"
+      "pre-commit": "npm run lint"
     }
   },
   "devDependencies": {
@@ -33,5 +32,6 @@
     "eslint-plugin-jsdoc": "^3.9.1",
     "eslint-plugin-react": "^7.11.1",
     "husky": "^1.0.0-rc.13"
-  }
+  },
+  "proxy": "http://localhost:8000"
 }
